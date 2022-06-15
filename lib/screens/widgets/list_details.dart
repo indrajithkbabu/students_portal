@@ -136,8 +136,8 @@ showAlertDialog(BuildContext context, int index) {
                   decoration: InputDecoration(hintText: 'Enter number'),
                 ),
                 TextButton(
-                    onPressed: () {
-                      getImage();
+                    onPressed: () async {
+                      await getImage();
                       photo = img;
                     },
                     child: Text('image'))
